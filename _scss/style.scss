@@ -1,0 +1,202 @@
+/*
+	Theme Name:
+	Theme URI:
+	Description: Custom Designed and Built Website for.
+	Version: 1.0
+	Author: Igoe Creative - Sarah Himmler (@igoecreative)
+	Author URI: http://goigoecreative.com
+	Tags: HTML5, SCSS, CSS, PHP
+
+*/
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+// All the colors
+$black: rgba(0,0,0,1);
+$white: rgba(255,255,255,1);
+
+//fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+$open: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+$arial:Arial,"Helvetica Neue",Helvetica,sans-serif;
+
+/*------------------------------------*\
+    GENERAL
+\*------------------------------------*/
+
+/* global box-sizing */
+*,*:after,*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+.container-fluid{max-width: 1300px;}
+body {font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;margin: 0;}
+.clear {
+	*zoom:1;
+	&:before{
+		content:' ';
+		display:table;
+	}
+	&:after{
+		content:' ';
+		display:table;
+		clear:both;
+	}
+}
+a {
+	color:#444;
+	text-decoration:none;
+	background: transparent;
+	&:hover {
+		color:#444;
+		outline:0;
+	}
+	&:focus {
+		outline:0;
+	}
+	&:active {
+		outline:0;
+	}
+}
+h1{
+	font-size: 30px;
+	margin: 10px 0;
+}
+h2{
+	font-size: 26px;
+	margin: 10px 0;
+}
+h3{
+	font-size: 24px;
+	margin: 10px 0;
+}
+h4{
+	font-size: 20px;
+	margin: 10px 0;
+}
+h5{
+	font-size: 18px;
+	margin: 10px 0;
+}
+h6{
+	font-size: 15px;
+	margin: 10px 0;
+}
+b,strong {
+  font-weight: 700;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/*------------------------------------*\
+    HEADER
+\*------------------------------------*/
+
+.header {
+	.logo {
+
+	}
+	.nav {
+
+	}
+	.social{
+		.header_social{
+			.social_link{
+				.fa{
+					font-size: 26px;
+				}
+			}
+		}
+	}
+}
+
+
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+.attachment-post-thumbnail{
+	&.size-post-thumbnail{
+		&.wp-post-image{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+.alignnone {margin:5px 20px 20px 0;}
+.aligncenter {display:block;margin:5px auto 5px auto;}
+
+img{
+	&.alignnone {
+		margin:5px 20px 20px 0;
+	}
+	&.alignleft {
+		float:left;
+		margin:5px 20px 20px 0;
+	}
+	&.alignright {
+		float:right;
+		margin:5px 0 20px 20px;
+	}
+	&.aligncenter {
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+
+
+/*------------------------------------*\
+    SIDEBAR
+\*------------------------------------*/
+.sidebar {
+
+}
+
+/*------------------------------------*\
+    FOOTER
+\*------------------------------------*/
+.footer {
+
+}
