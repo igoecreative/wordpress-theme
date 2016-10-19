@@ -1,3 +1,3 @@
 # wordpress-theme
-Custom blank WordPress theme built by Igoe Creative – @igoecreative.
+Custom blank WordPress theme with Bootstrap built by Igoe Creative – @igoecreative.
 <br> Version 1.0
