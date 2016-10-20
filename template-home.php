@@ -12,7 +12,7 @@
 	</div>
 
 	<div class="container">
-		<div class="inner default">
+		<div class="inner">
 			<div class="row">
 				<section>
 					<h1><?php the_title(); ?></h1>
