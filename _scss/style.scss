@@ -152,21 +152,42 @@ hr {
 	.logo {
 
 	}
-	.nav {
+		#nav {
+		.navbar-default{
+			background-color: transparent !important;
+			border-color: transparent !important;
+			.navbar-header{
+				float:none;
+				.navbar-toggle{
+					.icon-bar{
 
-	}
-	.social{
-		.header_social{
-			.social_link{
-				.fa{
-					font-size: 26px;
+					}
+				}
+			}
+			.collapse{
+				.nav.navbar-nav{
+					float:none;
+					li{
+						a{
+							color: $black;
+							&:hover,&:focus,&:active{
+								text-decoration:underline;
+							}
+						}
+					}
 				}
 			}
 		}
 	}
 }
 
-
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: $black !important;
+  background-color: transparent !important;
+	text-decoration:underline;
+}
 
 /*------------------------------------*\
     PAGES
