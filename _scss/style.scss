@@ -145,6 +145,22 @@ hr {
 		}
 	}
 }
+.navbar{//centering navbar
+	.navbar-nav {
+	  display: inline-block;
+	  float: none;
+	  vertical-align: top;
+		.navbar-collapse {
+		  text-align: center;
+		}
+	}
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  //color:  !important;
+  //background-color: transparent !important;
+}
 
 
 
