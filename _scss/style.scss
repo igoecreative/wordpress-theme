@@ -64,7 +64,7 @@ $arial:Arial,"Helvetica Neue",Helvetica,sans-serif;
 	text-rendering:optimizeLegibility;
 }
 .container-fluid{max-width: 1300px;}
-body {font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;margin: 0;}
+body {font:300 14px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;margin: 0;}
 .clear {
 	*zoom:1;
 	&:before{
@@ -124,6 +124,26 @@ hr {
   box-sizing: content-box;
   height: 0;
 }
+.margins {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  @media (min-width:$screen-sm) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: $screen-md) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+.small_margins {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  @media (min-width:$screen-sm) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 /*------------------------------------*\
     HEADER
 \*------------------------------------*/
@@ -132,21 +152,58 @@ hr {
 	.logo {
 
 	}
-	.nav {
+		#nav {
+		.navbar-default{
+			background-color: transparent !important;
+			border-color: transparent !important;
+			.navbar-header{
+				float:none;
+				.navbar-toggle{
+					.icon-bar{
 
-	}
-	.social{
-		.header_social{
-			.social_link{
-				.fa{
-					font-size: 26px;
+					}
+				}
+			}
+			.collapse{
+				.nav.navbar-nav{
+					float:none;
+					li{
+						a{
+							color: $black;
+							&:hover,&:focus,&:active{
+								text-decoration:underline;
+							}
+						}
+					}
 				}
 			}
 		}
 	}
 }
+.navbar{//centering navbar
+	.navbar-nav {
+	  display: inline-block;
+	  float: none;
+	  vertical-align: top;
+		.navbar-collapse {
+		  text-align: center;
+		}
+	}
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  //color:  !important;
+  //background-color: transparent !important;
+}
 
-
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: $black !important;
+  background-color: transparent !important;
+	text-decoration:underline;
+}
 
 /*------------------------------------*\
     PAGES
@@ -186,6 +243,24 @@ img{
 	}
 }
 
+.col-xs-15{
+  width:20%;
+}
+.col-sm-15 {
+  @media (min-width: $screen-sm) {
+    width: 20%;
+  }
+}
+.col-md-15 {
+  @media (min-width: $screen-md) {
+    width: 20%;
+  }
+}
+.col-lg-15 {
+  @media (min-width: $screen-lg) {
+    width: 20%;
+  }
+}
 
 /*------------------------------------*\
     SIDEBAR
