@@ -1,15 +1,15 @@
 /*
 	Theme Name:
 	Theme URI:
-	Description: Custom Designed and Built Website for.
+	Description: Blank Wordpress Website template. Bare Bones, ready for some styling.
 	Version: 1.0
-	Author: Igoe Creative - Sarah Himmler (@igoecreative)
+	Author: Igoe Creative (@igoecreative) - Sarah Himmler 
 	Author URI: http://goigoecreative.com
 	Tags: HTML5, SCSS, CSS, PHP
-
 */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-/*------------------------------------*    GENERAL
+/*------------------------------------*
+GENERAL
 \*------------------------------------*/
 /* global box-sizing */
 *, *:after, *:before {
@@ -134,7 +134,8 @@ hr {
 	}
 }
 
-/*------------------------------------*    HEADER
+/*------------------------------------*
+HEADER
 \*------------------------------------*/
 .header #nav .navbar-default {
 	background-color: transparent !important;
@@ -157,6 +158,16 @@ hr {
 	text-decoration: underline;
 }
 
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+.navbar .navbar-nav .navbar-collapse {
+	text-align: center;
+}
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
@@ -165,14 +176,16 @@ hr {
 	text-decoration: underline;
 }
 
-/*------------------------------------*    PAGES
+/*------------------------------------*
+PAGES
 \*------------------------------------*/
 .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-/*------------------------------------*    WORDPRESS CORE
+/*------------------------------------*
+WORDPRESS CORE
 \*------------------------------------*/
 .alignnone {
 	margin: 5px 20px 20px 0;
@@ -225,7 +238,11 @@ img.aligncenter {
 	}
 }
 
-/*------------------------------------*    SIDEBAR
+/*------------------------------------*
+SIDEBAR
 \*------------------------------------*/
-/*------------------------------------*    FOOTER
+
+
+/*------------------------------------*
+FOOTER
 \*------------------------------------*/
