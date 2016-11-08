@@ -1,9 +1,9 @@
 /*
-	Theme Name:
+	Theme Name: Igoe Creative
 	Theme URI:
-	Description: Blank Wordpress Website template. Bare Bones, ready for some styling.
+	Description:  Blank Wordpress Website template. Bare Bones, ready for some styling.
 	Version: 1.0
-	Author: Igoe Creative (@igoecreative) - Sarah Himmler 
+	Author: Igoe Creative - Sarah Himmler (@igoecreative)
 	Author URI: http://goigoecreative.com
 	Tags: HTML5, SCSS, CSS, PHP
 */
@@ -154,7 +154,9 @@ HEADER
 	color: black;
 }
 
-.header #nav .navbar-default .collapse .nav.navbar-nav li a:hover, .header #nav .navbar-default .collapse .nav.navbar-nav li a:focus, .header #nav .navbar-default .collapse .nav.navbar-nav li a:active {
+.header #nav .navbar-default .collapse .nav.navbar-nav li a:hover,
+.header #nav .navbar-default .collapse .nav.navbar-nav li a:focus,
+.header #nav .navbar-default .collapse .nav.navbar-nav li a:active {
 	text-decoration: underline;
 }
 
@@ -241,8 +243,6 @@ img.aligncenter {
 /*------------------------------------*
 SIDEBAR
 \*------------------------------------*/
-
-
 /*------------------------------------*
 FOOTER
 \*------------------------------------*/
