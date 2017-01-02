@@ -159,10 +159,12 @@ function igoe_pagination()
   global $wp_query;
   $lots = 999999999;
   echo paginate_links(array(
-    'base' => str_replace($lots, '%#%', get_pagenum_link($lots)),
+    'base' => '%_%',
     'format' => '?paged=%#%',
-    'current' => max(1, get_query_var('paged')),
-    'total' => $wp_query->max_num_pages
+    'current' => 0,
+    'total' => 1,
+    'prev_text' => __('« Previous'),
+    'next_text' => __('Next »')
   ));
 }
 
