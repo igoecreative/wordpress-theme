@@ -45,6 +45,7 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 // All the colors
 $black: rgba(0,0,0,1);
 $white: rgba(255,255,255,1);
+$grey: rgba(102,102,102,1);//#666666
 
 //fonts
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -204,7 +205,11 @@ hr {
   background-color: transparent !important;
 	text-decoration:underline;
 }
-
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:focus,
+.dropdown-menu>.active>a:hover{
+  background-color: $grey !important;
+}
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
