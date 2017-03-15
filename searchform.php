@@ -1,6 +1,9 @@
-<!-- search -->
-<form class="search" method="get" action="<?php echo home_url(); ?>" role="search">
-	<input class="search-input" type="search" name="s" placeholder="<?php _e( 'To search, type and hit enter.', 'igoecreative' ); ?>">
-	<button class="search-submit" type="submit" role="button"><?php _e( 'Search', 'igoecreative' ); ?></button>
+<!-- search form to copy and paste into doc -->
+<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+<div>
+<label class="screen-reader-text" for="s"><?php _x( 'Search for:', 'label' ); ?></label>
+<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Search', 'submit button' ); ?>" />
+</div>
 </form>
 <!-- /search -->
