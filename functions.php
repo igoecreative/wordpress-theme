@@ -198,7 +198,7 @@ function remove_thumbnail_dimensions( $html )
 function igoeCreativeGravatar ($avatar_defaults)
 {
   $myavatar = get_template_directory_uri() . '/img/gravatar.png';
-  $avatar_defaults[$myavatar] = "Custom Gravatar";
+  $avatar_defaults[$myavatar] = "Igoe Gravatar";
   return $avatar_defaults;
 }
 
@@ -282,7 +282,7 @@ remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 remove_action('wp_head', 'rel_canonical');
 remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
 // Add Filters
-add_filter('avatar_defaults', 'igoeCreativeGravatar'); // Custom Gravatar in Settings > Discussion
+add_filter('avatar_defaults', 'igoeCreativeGravatar'); // Igoe Gravatar in Settings > Discussion
 add_filter('body_class', 'add_slug_to_body_class'); // Add slug to body class (Starkers build)
 add_filter('widget_text', 'do_shortcode'); // Allow shortcodes in Dynamic Sidebar
 add_filter('widget_text', 'shortcode_unautop'); // Remove <p> tags in Dynamic Sidebars (better!)
