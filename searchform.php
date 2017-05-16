@@ -1,4 +1,4 @@
-<!-- search form to copy and paste into doc -->
+<!-- search -->
 <div id="search">
 	<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 		<div>
