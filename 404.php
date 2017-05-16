@@ -3,14 +3,16 @@
 <div class="container">
 	<div class="inner default">
 		<div class="row">
+			<div class="col-xs-12">
 
-			<div class="fourohfour">
-				<h1 class="aligncenter"><?php _e( 'Page not found', 'igoecreative' ); ?></h1>
-				<h2 class="aligncenter">
-					<a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'igoecreative' ); ?></a>
-				</h2>
+				<div class="fourohfour">
+					<h1 class="aligncenter"><?php _e( 'Page not found', 'igoecreative' ); ?></h1>
+					<h2 class="aligncenter">
+						<a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'igoecreative' ); ?></a>
+					</h2>
+				</div>
+
 			</div>
-
 		</div>
 	</div>
 </div>
