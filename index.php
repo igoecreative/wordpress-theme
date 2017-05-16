@@ -13,7 +13,7 @@
 
 	<div class="container">
 		<div class="row">
-			<section>
+			<section class="col-xs-12">
 				<h1><?php _e( 'Latest Posts', 'igoecreative' ); ?></h1>
 
 					<?php if (have_posts()): while (have_posts()) : the_post(); ?>
