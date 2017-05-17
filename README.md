@@ -1,5 +1,6 @@
 # blank-wordpress-theme
-Custom Blank, Responsive WordPress Theme using Bootstrap. 
+Custom Blank WordPress Theme using Bootstrap. 
+<br>Fully Responsive. 
 <br>HTML5, PHP, CSS, Bootstrap, JavaScript, Font-Awesome, JQuery, and AngularJS ready.
 <br>Bootstrap Navwalker included.
 <br>Optional SCSS ready.
