@@ -65,17 +65,12 @@ $arial:Arial,"Helvetica Neue",Helvetica,sans-serif;
 	text-rendering:optimizeLegibility;
 }
 .container-fluid{max-width: 1300px;}
-body {font:300 14px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;margin: 0;}
+body {font:300 14px/1.4 $open $grey;margin: 0;}
 .clear {
 	*zoom:1;
-	&:before{
+	&:before,&:after{
 		content:' ';
 		display:table;
-	}
-	&:after{
-		content:' ';
-		display:table;
-		clear:both;
 	}
 }
 a {
@@ -93,29 +88,61 @@ a {
 		outline:0;
 	}
 }
-h1{
-	font-size: 30px;
+a {
+	color:$grey;
+	text-decoration:none;
+	background: transparent;
+	&:hover,&:focus,&:active {
+		font-style: italic;
+		text-decoration:underline;
+	}
+}
+h1,h2,h3,h4,h5,h6{
+	color:$grey;
+	font-weight: 700;
 	margin: 10px 0;
+}
+h1{
+	font-size: 28px;
+	@media (min-width:$screen-sm-min) {
+		font-size: 30px;
+	}
+	@media (min-width:$screen-md-min) {
+		font-size: 32px;
+	}
 }
 h2{
-	font-size: 26px;
-	margin: 10px 0;
+	font-size: 22px;
+	@media (min-width:$screen-sm-min) {
+		font-size: 24px;
+	}
+	@media (min-width:$screen-md-min) {
+		font-size: 26px;
+	}
 }
 h3{
-	font-size: 24px;
-	margin: 10px 0;
+	font-size: 20px;
+	@media (min-width:$screen-sm-min) {
+		font-size: 22px;
+	}
+	@media (min-width:$screen-md-min) {
+		font-size: 24px;
+	}
 }
 h4{
-	font-size: 20px;
-	margin: 10px 0;
+	font-size: 18px;
+	@media (min-width:$screen-sm-min) {
+		font-size: 20px;
+	}
 }
 h5{
-	font-size: 18px;
-	margin: 10px 0;
+	font-size: 16px;
+	@media (min-width:$screen-sm-min) {
+		font-size: 18px;
+	}
 }
 h6{
 	font-size: 15px;
-	margin: 10px 0;
 }
 b,strong {
   font-weight: 700;
