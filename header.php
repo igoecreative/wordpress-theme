@@ -20,11 +20,11 @@
 
 		<?php wp_head(); ?>
 		<script>
-        conditionizr.config({
-            assets: '<?php echo get_template_directory_uri(); ?>',
-            tests: {}
-        });
-        </script>
+      conditionizr.config({
+        assets: '<?php echo get_template_directory_uri(); ?>',
+        tests: {}
+      });
+    </script>
 
 	</head>
 	<body <?php body_class(); ?>>
