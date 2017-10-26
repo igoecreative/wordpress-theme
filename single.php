@@ -24,10 +24,13 @@
 						</h1>
 						<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
 						<span class="author"><?php _e( 'Published by', 'igoecreative' ); ?> <?php the_author_posts_link(); ?></span>
-						<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'igoecreative' ), __( '1 Comment', 'igoecreative' ), __( '% Comments', 'igoecreative'  )); ?></span>
+
 						<?php the_content();?>
-						<?php the_tags( __('Tags: ', 'igoecreative' ), ', ', '<br>');?>
+
+						<p><?php the_tags( __('Tags: ', 'igoecreative' ), ', ', '<br>');?></p>
 						<p><?php _e( 'Categorised in: ', 'igoecreative' ); the_category(', '); ?></p>
+
+						<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'igoecreative' ), __( '1 Comment', 'igoecreative' ), __( '% Comments', 'igoecreative'  )); ?></span>
 						<?php comments_template(); ?>
 
 					</article>
