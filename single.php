@@ -18,11 +18,7 @@
 				<section class="col-xs-12">
 				<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-						<?php if ( has_post_thumbnail()) :?>
-							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-								<?php the_post_thumbnail(); ?>
-							</a>
-						<?php endif; ?>
+
 						<h1>
 							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 						</h1>
@@ -32,7 +28,6 @@
 						<?php the_content();?>
 						<?php the_tags( __('Tags: ', 'igoecreative' ), ', ', '<br>');?>
 						<p><?php _e( 'Categorised in: ', 'igoecreative' ); the_category(', '); ?></p>
-						<p><?php _e( 'This post was written by ', 'igoecreative' ); the_author(); ?></p>
 						<?php comments_template(); ?>
 
 					</article>
