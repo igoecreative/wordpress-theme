@@ -52,9 +52,7 @@ $grey: rgba(102,102,102,1);//#666666
 $open: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
 $arial:Arial,"Helvetica Neue",Helvetica,sans-serif;
 
-/*------------------------------------*\
-    GENERAL
-\*------------------------------------*/
+/*----------------GENERAL------------------*/
 
 /* global box-sizing */
 *,*:after,*:before {
@@ -65,7 +63,20 @@ $arial:Arial,"Helvetica Neue",Helvetica,sans-serif;
 	text-rendering:optimizeLegibility;
 }
 .container-fluid{max-width: 1300px;}
-body {font:300 14px/1.4 $open $grey;margin: 0;}
+body {
+	font-weight:400;
+	font-size: 14px;
+	font-family: $open;
+	color:$grey;
+	margin: 0;
+}
+p{
+	font-weight:400;
+	font-size: 14px;
+	font-family: $open;
+	color:$grey;
+	margin: 7px 0 10px;
+}
 .clear {
 	*zoom:1;
 	&:before,&:after{
@@ -77,14 +88,8 @@ a {
 	color:#444;
 	text-decoration:none;
 	background: transparent;
-	&:hover {
+	&:hover,&:active,&:focus {
 		color:#444;
-		outline:0;
-	}
-	&:focus {
-		outline:0;
-	}
-	&:active {
 		outline:0;
 	}
 }
@@ -172,9 +177,29 @@ hr {
     margin-bottom: 20px;
   }
 }
-/*------------------------------------*\
-    HEADER
-\*------------------------------------*/
+.btn-igoe{
+	text-transform: uppercase !important;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	padding: 8px 0;
+  width: 150px;
+	border: 2px solid $grey;
+	color: $grey !important;
+	border-radius: 0px;
+	letter-spacing: .45px;
+	margin-bottom: 15px;
+	&:hover, &:focus,&:active{
+		color: $grey !important;
+		border: 2px solid $grey;
+	}
+}
+/*-------------HEADER--------------*/
 
 .header {
 	.logo {
@@ -218,12 +243,6 @@ hr {
 		}
 	}
 }
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
-  //color:  !important;
-  //background-color: transparent !important;
-}
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
@@ -237,27 +256,61 @@ hr {
 .dropdown-menu>.active>a:hover{
   background-color: $grey !important;
 }
-/*------------------------------------*\
-    PAGES
-\*------------------------------------*/
+/*--------------PAGES---------------*/
 .attachment-post-thumbnail{
 	&.size-post-thumbnail{
 		&.wp-post-image{
 			margin-left: auto;
 			margin-right: auto;
+			width: 100%;
 		}
 	}
 }
 
-/*------------------------------------*\
-    WORDPRESS CORE
-\*------------------------------------*/
+/*-----------CONTACT FORM------------*/
+.wpcf7{
+	.col-xs-12{
+		input{
+			width: 100%;
+			margin: 10px 0px;
+			padding: 10px;
+			border: $grey 2px solid;
+		}
+		textarea{
+			width: 100%;
+	    height: 165px;
+			padding: 10px;
+			margin: 10px 0px;
+			border: $grey 2px solid;
+		}
+	}
+	.wpcf7-submit,.reset {
+		border: $red 2px solid !important;
+		width: 100px !important;
+		margin: 10px 15px;
+		color: $grey;
+		background-color: $white;
+		@media (min-width: $screen-sm-min) {
+			width: 150px !important;
+		}
+		&:hover,&:focus,&:active{
+			border: $grey 2px solid !important;
+			color: $red;
+		}
+	}
+	.submit{
+		display: inline-flex;
+		margin-bottom: 30px;
+	}
+}
+
+/*------------WORDPRESS CORE------------*/
 
 .alignnone {margin:5px 20px 20px 0;}
 
 .aligncenter {
 	display:block;
-	margin:5px auto;
+	margin:0px auto;
 	text-align: center;
 	p,h1,h2,h3,h4,h5,h6{
 		text-align: center;
@@ -302,16 +355,12 @@ img{
   }
 }
 
-/*------------------------------------*\
-    SIDEBAR
-\*------------------------------------*/
+/*--------------SIDEBAR-------------------*/
 .sidebar {
 
 }
 
-/*------------------------------------*\
-    FOOTER
-\*------------------------------------*/
+/*-------------FOOTER----------------*/
 .footer {
 
 }
