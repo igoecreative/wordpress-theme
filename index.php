@@ -30,8 +30,8 @@
 								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 							</h2>
 
-							<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-							<span class="author"><?php _e( 'Published by', 'igoecreative' ); ?> <?php the_author_posts_link(); ?></span>
+							<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span> – <span class="author"><?php _e( 'Published by', 'silverline' ); ?> <?php the_author_posts_link(); ?></span>
+							<p><?php the_excerpt(); ?></p>
 							<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'igoecreative' ), __( '1 Comment', 'igoecreative' ), __( '% Comments', 'igoecreative' )); ?></span>
 
 						</article>
