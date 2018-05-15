@@ -62,7 +62,6 @@ $arial:Arial,"Helvetica Neue",Helvetica,sans-serif;
 	font-smoothing:antialiased;
 	text-rendering:optimizeLegibility;
 }
-.container-fluid{max-width: 1300px;}
 body {
 	font-weight:400;
 	font-size: 14px;
@@ -82,15 +81,6 @@ p{
 	&:before,&:after{
 		content:' ';
 		display:table;
-	}
-}
-a {
-	color:#444;
-	text-decoration:none;
-	background: transparent;
-	&:hover,&:active,&:focus {
-		color:#444;
-		outline:0;
 	}
 }
 a {
@@ -148,14 +138,6 @@ h5{
 }
 h6{
 	font-size: 15px;
-}
-b,strong {
-  font-weight: 700;
-}
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
 }
 .margins {
   margin-top: 15px;
@@ -285,7 +267,7 @@ hr {
 		}
 	}
 	.wpcf7-submit,.reset {
-		border: $red 2px solid !important;
+		border: $grey 2px solid !important;
 		width: 100px !important;
 		margin: 10px 15px;
 		color: $grey;
@@ -295,7 +277,7 @@ hr {
 		}
 		&:hover,&:focus,&:active{
 			border: $grey 2px solid !important;
-			color: $red;
+			color: $grey;
 		}
 	}
 	.submit{
@@ -305,7 +287,15 @@ hr {
 }
 
 /*------------WORDPRESS CORE------------*/
-
+b,strong {
+  font-weight: 700;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+.caps{text-transform: uppercase;}
 .alignnone {margin:5px 20px 20px 0;}
 
 .aligncenter {
