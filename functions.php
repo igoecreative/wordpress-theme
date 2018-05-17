@@ -271,7 +271,7 @@ function igoeCustomComments($comment, $args, $depth)
 function my_login_logo_one() {  ?>
   <style type="text/css">
     body.login div#login h1 a {
-      background-image: url(http://leadershipeast.com/wordpress/wp-content/themes/leadership-east/img/gravatar.png);
+      background-image: url(/wordpress/wp-content/themes/theme-name/img/gravatar.png);
       padding-bottom: 30px;
     }
   </style>
