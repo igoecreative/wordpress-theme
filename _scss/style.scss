@@ -187,7 +187,19 @@ h6{
 	.logo {
 
 	}
-		#nav {
+	.social_link{
+		.fa{
+			color: $grey;
+		}
+		&:hover,&:focus,&:active{
+			text-decoration:none !important;
+			.fa{
+				color: $black;
+				text-decoration:none;
+			}
+		}
+	}
+	#nav {
 		.navbar-default{
 			background-color: transparent !important;
 			border-color: transparent !important;
